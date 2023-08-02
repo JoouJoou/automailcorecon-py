@@ -58,12 +58,8 @@ def enviar_email(email_destinatario):
         mensagem["To"] = email_destinatario
         mensagem["Subject"] = assunto
 
-        # Parte de texto do e-mail (HTML)
         parte_texto = MIMEText(corpo_email, "html")
         mensagem.attach(parte_texto)
-
-    
-
 
         server.sendmail(username, email_destinatario, mensagem.as_string())
         print(f"E-mail enviado para {email_destinatario} com sucesso!")
@@ -76,5 +72,3 @@ with open('emails.csv', 'r', encoding='utf-8-sig') as csv_file:
     for row in reader:
         email_destinatario = row['email']
         enviar_email(email_destinatario)
-
-        
