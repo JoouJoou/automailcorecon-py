@@ -11,7 +11,7 @@ def enviar_email(email_destinatario):
     smtp_port = 587
     username = "coreconpe2015@gmail.com"
     senha_app = "grna psun juzu hhol"
-    assunto = "Corecon-PE: Convite para seminário em comemoração ao Dia do Economista"
+    assunto = "Economista: seja o rosto da nossa campanha"
 
     corpo_email = """\
     <html>
@@ -34,16 +34,32 @@ def enviar_email(email_destinatario):
           em {
             font-style: italic;
           }
+          button {
+          width: 40%;
+          background-color: #78A680;
+          border-radius: 50px;
+          margin: 0 auto;
+          border: none; 
+          display: block; 
+          margin: 0 auto;
+          }
+          .button-bottom {
+          width:30%;
+          }
+          a p {
+          text-decoration: none;
+          color: white;
+          font-size: 14px;
+          }
+          
         </style>
       </head>
       <body>
-      <p style="text-align: center;"><img style="width: 500px; height: 500px; display: block; margin: 0 auto;" src="https://i.imgur.com/A486WYG.png"></p>
-        <p>O Corecon-PE convida a todos para o seminário comemorativo ao <strong>Dia do Economista 2023</strong>, que será realizado em 16 de agosto, no Auditório do Banco Central, em Recife, localizado na Rua da Aurora 1259, das 14h às 17h.</p>
-        <p>Esse ano o evento conta com as palestras do Econ. Antonio Corrêa de Lacerda (PUCSP), que falará sobre <em>“O papel do Estado e do BNDES para o desenvolvimento”</em>, e do Econ. Fábio Silva, que falará sobre os <em>"Desafios do mercado de trabalho para os Economistas"</em>. As palestras serão seguidas de um debate com a Profa. Dra. Poema Souza (Vice-Presidente do Corecon-PE e Profa. Adjunta da UFRPE), que terá a moderação do Econ. André Morais (Presidente do Corecon-PE).</p>
-        <p>No momento, como tradicionalmente, será realizada a cerimônia de premiação dos vencedores do <strong>XVII Prêmio Pernambuco de Economia Dirceu Pessoa</strong>.</p>
-        <p>Inscreva-se em www.sympla.com.br/coreconpe</p>
-        <p style="text-align: center;"><img style="width: 200px; height: 60px; display: block; margin: 0 auto;" src="https://i.imgur.com/lMh1zlt.png"></p>
-        
+      <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSfGSJO3LNB-q3Nd-tSgjzIS5DAHQuaEr9W32QVj8LcZ9ObQJw/viewform" style="text-decoration: none; color: inherit;"><p>Clique AQUI e participe. Juntos fortalecemos a profissão!</p></a></button>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGSJO3LNB-q3Nd-tSgjzIS5DAHQuaEr9W32QVj8LcZ9ObQJw/viewform" style="text-align: center;"><img style="width: 530px; height: 600px; display: block; margin: 10px auto 10px auto;" src="https://i.imgur.com/RmUttWk.jpg"></a>
+        <button class="button-bottom"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfGSJO3LNB-q3Nd-tSgjzIS5DAHQuaEr9W32QVj8LcZ9ObQJw/viewform" style="text-decoration: none; color: inherit;"><p>13 de agosto: Dia do Economista</p></a></button>
+        <p>Contamos com você!</p>
+        <p>Sistema Cofecon/Corecons</p>
       </body>
     </html>
     """
