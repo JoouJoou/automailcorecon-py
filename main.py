@@ -9,8 +9,8 @@ from email.mime.image import MIMEImage
 def enviar_email(email_destinatario):
     smtp_server = "smtp.gmail.com"
     smtp_port = 587
-    username = "coreconpe2015@gmail.com"
-    senha_app = "grna psun juzu hhol"
+    username = ""
+    senha_app = ""
     assunto = "Economista: seja o rosto da nossa campanha"
 
     corpo_email = """\
